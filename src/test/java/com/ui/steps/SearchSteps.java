@@ -38,4 +38,33 @@ public class SearchSteps {
         System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
     }
 
+    @Given("launch edge and search for text 4")
+    public void search_text_four() throws InterruptedException {
+        WebDriver driver = Hooks.getDriver();
+        driver.get("https://www.bing.com/");
+        driver.manage().window().maximize();
+        Thread.sleep(5000);
+        driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("hello automation! I'm back four.");
+        System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
+    }
+
+    @Given("launch edge and search for text 5")
+    public void search_text_five() throws InterruptedException {
+        WebDriver driver = Hooks.getDriver();
+        driver.get("https://www.bing.com/");
+        driver.manage().window().maximize();
+        Thread.sleep(5000);
+        driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("hello automation! I'm back five.");
+        System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
+    }
+
+    @Given("launch edge and search for text 6")
+    public void search_text_six() throws InterruptedException {
+        WebDriver driver = Hooks.getDriver();
+        driver.get("https://www.bing.com/");
+        driver.manage().window().maximize();
+        Thread.sleep(5000);
+        driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("hello automation! I'm back six.");
+        System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
+    }
 }
