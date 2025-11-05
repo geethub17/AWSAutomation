@@ -23,7 +23,7 @@ public class SearchSteps {
         WebDriver driver = Hooks.getDriver();
         driver.get("https://www.bing.com/");
         driver.manage().window().maximize();
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("hello automation! I'm back two.");
         System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
     }

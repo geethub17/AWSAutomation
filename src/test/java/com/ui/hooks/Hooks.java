@@ -22,12 +22,14 @@ public class Hooks {
     public void setUp() throws MalformedURLException {
         System.out.printf(">> Starting scenario on thread %s%n", Thread.currentThread().getName());
 
-        //Remote websriver - locally
-      /*  WebDriver driver = new EdgeDriver(); // Selenium Manager will download driver
+        //Locally
+/*        WebDriver driver = new EdgeDriver(); // Selenium Manager will download driver
         DRIVER.set(driver);*/
 
-        // Selenium grid with single container and local setup - but it fails as there will be no Selenium Grid running inside this container.
-     /*   String browser = System.getProperty("browser");
+        /* Selenium grid with single container and local setup -
+        but it fails as there will be no Selenium Grid running.
+        */
+        /*String browser = System.getProperty("browser");
         RemoteWebDriver driver;
         if ("chrome".equalsIgnoreCase(browser)) {
             ChromeOptions options = new ChromeOptions();
@@ -62,6 +64,7 @@ public class Hooks {
                     options
             );
         }
+
         // Log session details
         SessionId sessionId = driver.getSessionId();
         System.out.printf(">> Created session %s on thread %s%n", sessionId, Thread.currentThread().getName());
