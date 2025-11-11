@@ -15,6 +15,7 @@
         <cucumber.version>7.28.2</cucumber.version>
         <junit.jupiter.version>5.13.4</junit.jupiter.version>
         <surefire.plugin.version>3.2.5</surefire.plugin.version>
+        <log4j.version>2.25.2</log4j.version>
     </properties>
 
     <dependencyManagement>
@@ -62,6 +63,18 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit-platform-engine</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!--log4j-->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
         </dependency>
     </dependencies>
 

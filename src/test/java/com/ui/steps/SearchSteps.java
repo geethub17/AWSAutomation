@@ -1,79 +1,27 @@
 package com.ui.steps;
 
-import com.ui.hooks.Hooks;
+import com.ui.pages.BingSearchPage;
 import io.cucumber.java.en.Given;
-import org.openqa.selenium.By;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.util.Strings;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class SearchSteps {
+    private static final Logger logger = LogManager.getLogger(SearchSteps.class);
+    private WebDriver driver;
+    private BingSearchPage bingPage;
 
-    @Given("launch edge and search for text 1")
-    public void search_text_one() throws InterruptedException {
-        WebDriver driver = Hooks.getDriver();
-        driver.get("https://www.bing.com/");
-        driver.manage().window().maximize();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id='sb_form_q']")));
-        driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("hello automation! I'm back one.");
-        System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
-    }
+    @Given("launch driver and search for text {int}")
+    public void launchDriverAndSearchFor(int text) {
+        driver = com.ui.base.DriverManager.getDriver();
+        String searchText = "hello automation! I'm back " + text;
+        logger.info("Executing search test on browser with text [{}]", text);
 
-    @Given("launch edge and search for text 2")
-    public void search_text_two() throws InterruptedException {
-        WebDriver driver = Hooks.getDriver();
-        driver.get("https://www.bing.com/");
-        driver.manage().window().maximize();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id='sb_form_q']")));
-        driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("hello automation! I'm back two.");
-        System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
-    }
+        bingPage = new BingSearchPage(driver);
+        bingPage.openHomePage();
+        bingPage.searchFor(searchText);
 
-    @Given("launch edge and search for text 3")
-    public void search_text_three() throws InterruptedException {
-        WebDriver driver = Hooks.getDriver();
-        driver.get("https://www.bing.com/");
-        driver.manage().window().maximize();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id='sb_form_q']")));
-        driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("hello automation! I'm back three.");
-        System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
-    }
-
-    @Given("launch edge and search for text 4")
-    public void search_text_four() throws InterruptedException {
-        WebDriver driver = Hooks.getDriver();
-        driver.get("https://www.bing.com/");
-        driver.manage().window().maximize();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id='sb_form_q']")));
-        driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("hello automation! I'm back four.");
-        System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
-    }
-
-    @Given("launch edge and search for text 5")
-    public void search_text_five() throws InterruptedException {
-        WebDriver driver = Hooks.getDriver();
-        driver.get("https://www.bing.com/");
-        driver.manage().window().maximize();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id='sb_form_q']")));
-        driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("hello automation! I'm back five.");
-        System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
-    }
-
-    @Given("launch edge and search for text 6")
-    public void search_text_six() throws InterruptedException {
-        WebDriver driver = Hooks.getDriver();
-        driver.get("https://www.bing.com/");
-        driver.manage().window().maximize();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id='sb_form_q']")));
-        driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("hello automation! I'm back six.");
-        System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
+        logger.info("Page title after search: {}", driver.getTitle());
     }
 }

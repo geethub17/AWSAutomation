@@ -1,7 +1,11 @@
-package com.ui.hooks;
+package com.ui.base;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.ThreadContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -12,20 +16,23 @@ import org.openqa.selenium.remote.SessionId;
 import java.net.MalformedURLException;
 import java.net.URI;
 
-public class Hooks {
+public class DriverManager {
     private static final ThreadLocal<WebDriver> DRIVER = new ThreadLocal<>();
+    protected static final Logger logger = LogManager.getLogger(DriverManager.class);
 
     public static WebDriver getDriver() {
         return DRIVER.get();
     }
 
     @Before
-    public void setUp() throws MalformedURLException {
-        System.out.printf(">> Starting scenario on thread %s%n", Thread.currentThread().getName());
+    public void setUp(Scenario scenario) throws MalformedURLException {
+        logger.info(">> Starting scenario on thread {}", Thread.currentThread().getName());
+        logger.info(">> Starting scenario '{}' on thread {}", scenario.getName(), Thread.currentThread().getName());
 
         //Locally
-/*        WebDriver driver = new EdgeDriver();
-        DRIVER.set(driver);*/
+      /*  WebDriver driver = new EdgeDriver();
+        DRIVER.set(driver);
+        ThreadContext.put("browser", System.getProperty("browser"));*/
 
         /* Selenium grid with single container and local setup -
         but it fails as there will be no Selenium Grid running.
@@ -51,13 +58,14 @@ public class Hooks {
         if (browser == null || browser.isEmpty()) {
             browser = System.getenv("BROWSER");
         }
+        ThreadContext.put("browser", browser);
 
         String hubURL = System.getenv("SELENIUM_HUB_URL");
-        System.out.println("I am here... "+ hubURL);
+        logger.debug("Connecting to Selenium Hub at: {}", hubURL);
 
         RemoteWebDriver driver;
-        System.out.println("Browser from System.getProperty: " + browser);
-        System.out.println("Hub URL from System.getenv: " + hubURL);
+        logger.info("Browser from System.getProperty: {}", browser);
+        logger.info("Hub URL from System.getenv: {}", hubURL);
 
         if ("chrome".equalsIgnoreCase(browser)) {
             ChromeOptions options = new ChromeOptions();
@@ -75,16 +83,18 @@ public class Hooks {
 
         // Log session details
         SessionId sessionId = driver.getSessionId();
-        System.out.printf(">> Created session %s on thread %s%n", sessionId, Thread.currentThread().getName());
+        logger.info(">> Created session {} on thread {}", sessionId, Thread.currentThread().getName());
         DRIVER.set(driver);
     }
 
     @After
-    public void tearDown() {
+    public void tearDown(Scenario scenario) {
         WebDriver d = DRIVER.get();
         if (d != null) {
+            logger.info("<< Closing browser for scenario '{}'", scenario.getName());
             d.quit();
             DRIVER.remove();
         }
+        ThreadContext.clearAll();
     }
 }
