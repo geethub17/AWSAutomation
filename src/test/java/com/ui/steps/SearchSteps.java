@@ -1,10 +1,13 @@
 package com.ui.steps;
 
+import com.ui.hooks.Hooks;
 import io.cucumber.java.en.Given;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import com.ui.hooks.Hooks;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class SearchSteps {
 
@@ -13,7 +16,8 @@ public class SearchSteps {
         WebDriver driver = Hooks.getDriver();
         driver.get("https://www.bing.com/");
         driver.manage().window().maximize();
-        Thread.sleep(5000);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id='sb_form_q']")));
         driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("hello automation! I'm back one.");
         System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
     }
@@ -23,7 +27,8 @@ public class SearchSteps {
         WebDriver driver = Hooks.getDriver();
         driver.get("https://www.bing.com/");
         driver.manage().window().maximize();
-        Thread.sleep(10000);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id='sb_form_q']")));
         driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("hello automation! I'm back two.");
         System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
     }
@@ -33,7 +38,8 @@ public class SearchSteps {
         WebDriver driver = Hooks.getDriver();
         driver.get("https://www.bing.com/");
         driver.manage().window().maximize();
-        Thread.sleep(5000);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id='sb_form_q']")));
         driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("hello automation! I'm back three.");
         System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
     }
@@ -43,7 +49,8 @@ public class SearchSteps {
         WebDriver driver = Hooks.getDriver();
         driver.get("https://www.bing.com/");
         driver.manage().window().maximize();
-        Thread.sleep(5000);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id='sb_form_q']")));
         driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("hello automation! I'm back four.");
         System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
     }
@@ -53,7 +60,8 @@ public class SearchSteps {
         WebDriver driver = Hooks.getDriver();
         driver.get("https://www.bing.com/");
         driver.manage().window().maximize();
-        Thread.sleep(5000);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id='sb_form_q']")));
         driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("hello automation! I'm back five.");
         System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
     }
@@ -63,7 +71,8 @@ public class SearchSteps {
         WebDriver driver = Hooks.getDriver();
         driver.get("https://www.bing.com/");
         driver.manage().window().maximize();
-        Thread.sleep(5000);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id='sb_form_q']")));
         driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("hello automation! I'm back six.");
         System.out.printf("Title(%s) = %s%n", Thread.currentThread().getName(), driver.getTitle());
     }

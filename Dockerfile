@@ -1,19 +1,14 @@
-# Use official Maven image with JDK 17
+# Use official Maven + JDK 17
 FROM maven:3.9.9-eclipse-temurin-17
 
-# Set working directory
 WORKDIR /app
 
-# Copy pom.xml and download dependencies first (better caching)
+# Cache dependencies
 COPY pom.xml .
-
 RUN mvn dependency:go-offline -B
 
-# Copy the entire project
+# Copy project files
 COPY . .
 
-# Set environment variables (optional, browser can be overridden at runtime)
-ENV BROWSER=edge
-
-# Default command (can be overridden in docker-compose.yml)
-CMD ["mvn", "clean", "test", "-Psmoke", "-Dbrowser=${BROWSER}"]
+# This CMD is overridden by docker-compose
+CMD ["bash", "-c", "echo 'Use docker-compose to run specific test runner'"]

@@ -4,6 +4,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.SessionId;
@@ -23,7 +24,7 @@ public class Hooks {
         System.out.printf(">> Starting scenario on thread %s%n", Thread.currentThread().getName());
 
         //Locally
-/*        WebDriver driver = new EdgeDriver(); // Selenium Manager will download driver
+/*        WebDriver driver = new EdgeDriver();
         DRIVER.set(driver);*/
 
         /* Selenium grid with single container and local setup -
@@ -47,10 +48,17 @@ public class Hooks {
 
         //Selenium grid with multiple containers
         String browser = System.getProperty("browser");
+        if (browser == null || browser.isEmpty()) {
+            browser = System.getenv("BROWSER");
+        }
+
         String hubURL = System.getenv("SELENIUM_HUB_URL");
         System.out.println("I am here... "+ hubURL);
 
         RemoteWebDriver driver;
+        System.out.println("Browser from System.getProperty: " + browser);
+        System.out.println("Hub URL from System.getenv: " + hubURL);
+
         if ("chrome".equalsIgnoreCase(browser)) {
             ChromeOptions options = new ChromeOptions();
             driver = new RemoteWebDriver(
