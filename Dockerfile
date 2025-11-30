@@ -6,6 +6,7 @@ WORKDIR /app
 # Cache dependencies
 COPY pom.xml .
 RUN mvn dependency:go-offline -B
+RUN mkdir -p /app/logs
 
 # Copy project files
 COPY . .

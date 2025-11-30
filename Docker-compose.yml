@@ -31,7 +31,6 @@ services:
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
       - SE_NODE_MAX_SESSIONS=2
 
-  # --- Chrome Runner ---
   test-runner-chrome:
     build: .
     container_name: test-runner-chrome
@@ -44,7 +43,6 @@ services:
     command: >
       bash -c "sleep 10 && mvn clean test -Psmoke -Dtest=com.ui.runner.ChromeTestRunner"
 
-  # --- Edge Runner ---
   test-runner-edge:
     build: .
     container_name: test-runner-edge

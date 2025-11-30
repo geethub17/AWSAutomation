@@ -16,6 +16,8 @@
         <junit.jupiter.version>5.13.4</junit.jupiter.version>
         <surefire.plugin.version>3.2.5</surefire.plugin.version>
         <log4j.version>2.25.2</log4j.version>
+        <extentReportsAdapter.version>1.12.0</extentReportsAdapter.version>
+        <extentReports.version>5.1.1</extentReports.version>
     </properties>
 
     <dependencyManagement>
@@ -75,6 +77,18 @@
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>${log4j.version}</version>
+        </dependency>
+
+        <!--Extent reports-->
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber7-adapter</artifactId>
+            <version>${extentReportsAdapter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>${extentReports.version}</version>
         </dependency>
     </dependencies>
 

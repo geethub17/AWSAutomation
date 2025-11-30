@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <theme>standard</theme>
+        <documentTitle>Edge Automation Report</documentTitle>
+        <reportName>Edge Test Execution</reportName>
+    </configuration>
+</extentreports>

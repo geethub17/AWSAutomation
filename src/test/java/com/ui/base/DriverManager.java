@@ -30,9 +30,9 @@ public class DriverManager {
         logger.info(">> Starting scenario '{}' on thread {}", scenario.getName(), Thread.currentThread().getName());
 
         //Locally
-      /*  WebDriver driver = new EdgeDriver();
+        WebDriver driver = new EdgeDriver();
         DRIVER.set(driver);
-        ThreadContext.put("browser", System.getProperty("browser"));*/
+        ThreadContext.put("browser", System.getProperty("browser"));
 
         /* Selenium grid with single container and local setup -
         but it fails as there will be no Selenium Grid running.
@@ -54,7 +54,7 @@ public class DriverManager {
         }*/
 
         //Selenium grid with multiple containers
-        String browser = System.getProperty("browser");
+        /*String browser = System.getProperty("browser");
         if (browser == null || browser.isEmpty()) {
             browser = System.getenv("BROWSER");
         }
@@ -84,7 +84,7 @@ public class DriverManager {
         // Log session details
         SessionId sessionId = driver.getSessionId();
         logger.info(">> Created session {} on thread {}", sessionId, Thread.currentThread().getName());
-        DRIVER.set(driver);
+        DRIVER.set(driver);*/
     }
 
     @After

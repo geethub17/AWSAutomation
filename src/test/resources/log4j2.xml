@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN" monitorInterval="30">
 
-    <!-- ========================================================= -->
-    <!-- LOG FILES: One per browser (uses env:BROWSER)             -->
-    <!-- ========================================================= -->
+    <Properties>
+        <!-- Docker value first (BROWSER), else local -Dbrowser -->
+        <Property name="browserName">
+            ${env:BROWSER:-${sys:browser:-default}}
+        </Property>
+    </Properties>
+
     <Appenders>
 
-        <!-- Console output (shown in Docker logs) -->
+        <!-- Console output -->
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS}{America/New_York} [%t] %-5level %logger{36} [%X{browser}] - %msg%n"/>
         </Console>
 
-        <!-- Rolling file appender per browser -->
+        <!-- Rolling file per browser -->
         <RollingFile name="FileAppender"
-                     fileName="logs/${sys:browser:-${env:BROWSER:-default}}.log"
-                     filePattern="logs/${sys:browser:-${env:BROWSER:-default}}-%d{yyyy-MM-dd}-%i.log.gz">
-            <PatternLayout>
-                <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Pattern>
-            </PatternLayout>
+                     fileName="logs/${browserName}.log"
+                     filePattern="logs/${browserName}-%d{yyyy-MM-dd}-%i.log.gz">
+
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS}{America/New_York} [%t] %-5level %logger{36} [%X{browser}] - %msg%n"/>
+
             <Policies>
-                <!-- Roll file after 10 MB -->
                 <SizeBasedTriggeringPolicy size="10 MB"/>
             </Policies>
         </RollingFile>
 
     </Appenders>
 
-    <!-- ========================================================= -->
-    <!-- Root logger setup                                         -->
-    <!-- ========================================================= -->
     <Loggers>
-        <!-- You can make this DEBUG temporarily when debugging -->
         <Root level="info">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="FileAppender"/>
