@@ -1,7 +1,5 @@
 # AWSAutomation
 
-Here’s a clean and professional GitHub README for your automation project based on the details you provided:
-
 ---
 
 # Selenium Automation Framework with Dockerized Grid & Multi-Browser Support
