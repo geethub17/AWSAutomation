@@ -1,5 +1,7 @@
 package com.ui.base;
 
+import com.ui.reporting.ExtentLogger;
+import com.ui.steps.SearchSteps;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -18,7 +20,7 @@ import java.net.URI;
 
 public class DriverManager {
     private static final ThreadLocal<WebDriver> DRIVER = new ThreadLocal<>();
-    protected static final Logger logger = LogManager.getLogger(DriverManager.class);
+    private static final ExtentLogger logger = ExtentLogger.getLogger(DriverManager.class);
 
     public static WebDriver getDriver() {
         return DRIVER.get();

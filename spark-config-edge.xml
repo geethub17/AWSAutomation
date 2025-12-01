@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extentreports>
     <configuration>
-        <theme>standard</theme>
+        <theme>dark</theme>
         <documentTitle>Edge Automation Report</documentTitle>
         <reportName>Edge Test Execution</reportName>
+        <encoding>UTF-8</encoding>
+        <timelineEnabled>true</timelineEnabled>
+        <protocol>HTTPS</protocol>
     </configuration>
 </extentreports>

@@ -1,5 +1,7 @@
 package com.ui.pages;
 
+import com.ui.reporting.ExtentLogger;
+import com.ui.steps.SearchSteps;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -9,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class BingSearchPage {
-    private static final Logger logger = LogManager.getLogger(BingSearchPage.class);
+    private static final ExtentLogger logger = ExtentLogger.getLogger(BingSearchPage.class);
     private final WebDriver driver;
     private final WebDriverWait wait;
 

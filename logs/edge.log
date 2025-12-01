@@ -1,208 +1,25 @@
-2025-11-26 03:41:51.754 [ForkJoinPool-1-worker-2] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-2
-2025-11-26 03:41:51.756 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-3
-2025-11-26 03:41:51.766 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 5' on thread ForkJoinPool-1-worker-3
-2025-11-26 03:41:51.765 [ForkJoinPool-1-worker-2] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 2' on thread ForkJoinPool-1-worker-2
-2025-11-26 03:42:07.202 [ForkJoinPool-1-worker-2] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [2]
-2025-11-26 03:42:07.623 [ForkJoinPool-1-worker-2] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 03:42:13.134 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [5]
-2025-11-26 03:42:13.134 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 03:42:16.147 [ForkJoinPool-1-worker-2] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 03:42:16.149 [ForkJoinPool-1-worker-2] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 2
-2025-11-26 03:42:21.677 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 03:42:21.678 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 5
-2025-11-26 03:42:25.511 [ForkJoinPool-1-worker-2] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 03:42:25.524 [ForkJoinPool-1-worker-2] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 2'
-2025-11-26 03:42:29.027 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 03:42:29.030 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 5'
-2025-11-26 03:53:03.412 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-3
-2025-11-26 03:53:03.412 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-1
-2025-11-26 03:53:03.419 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 5' on thread ForkJoinPool-1-worker-3
-2025-11-26 03:53:03.420 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 2' on thread ForkJoinPool-1-worker-1
-2025-11-26 03:53:11.084 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [2]
-2025-11-26 03:53:11.344 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 03:53:14.190 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [5]
-2025-11-26 03:53:14.194 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 03:53:21.971 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 03:53:21.972 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 2
-2025-11-26 03:53:25.109 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 03:53:25.109 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 5
-2025-11-26 03:53:34.955 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 03:53:34.971 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 5'
-2025-11-26 03:53:35.641 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 03:53:35.646 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 2'
-2025-11-26 03:56:54.260 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-1
-2025-11-26 03:56:54.266 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 2' on thread ForkJoinPool-1-worker-1
-2025-11-26 03:56:54.260 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-3
-2025-11-26 03:56:54.268 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 5' on thread ForkJoinPool-1-worker-3
-2025-11-26 03:57:04.065 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [5]
-2025-11-26 03:57:04.081 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 03:57:07.995 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 03:57:07.996 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 5
-2025-11-26 03:57:09.655 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [2]
-2025-11-26 03:57:09.656 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 03:57:13.784 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 03:57:13.785 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 2
-2025-11-26 03:57:17.817 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 03:57:17.836 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 5'
-2025-11-26 03:57:23.025 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 03:57:23.028 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 2'
-2025-11-26 03:59:27.980 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-3
-2025-11-26 03:59:27.980 [ForkJoinPool-1-worker-2] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-2
-2025-11-26 03:59:27.986 [ForkJoinPool-1-worker-2] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 2' on thread ForkJoinPool-1-worker-2
-2025-11-26 03:59:27.985 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 5' on thread ForkJoinPool-1-worker-3
-2025-11-26 03:59:35.339 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [5]
-2025-11-26 03:59:35.397 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 03:59:38.351 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 03:59:38.352 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 5
-2025-11-26 03:59:39.062 [ForkJoinPool-1-worker-2] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [2]
-2025-11-26 03:59:39.063 [ForkJoinPool-1-worker-2] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 03:59:40.649 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 03:59:40.667 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 5'
-2025-11-26 03:59:42.067 [ForkJoinPool-1-worker-2] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 03:59:42.070 [ForkJoinPool-1-worker-2] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 2
-2025-11-26 03:59:42.340 [ForkJoinPool-1-worker-2] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 03:59:42.344 [ForkJoinPool-1-worker-2] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 2'
-2025-11-26 06:27:28.057 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-1
-2025-11-26 06:27:28.057 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-3
-2025-11-26 06:27:28.161 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 2' on thread ForkJoinPool-1-worker-1
-2025-11-26 06:27:28.161 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 5' on thread ForkJoinPool-1-worker-3
-2025-11-26 06:27:35.895 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [2]
-2025-11-26 06:27:35.929 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 06:27:40.497 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 06:27:40.498 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 2
-2025-11-26 06:27:40.551 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [5]
-2025-11-26 06:27:40.552 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 06:27:43.717 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 06:27:43.733 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 2'
-2025-11-26 06:27:47.211 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 06:27:47.212 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 5
-2025-11-26 06:27:47.677 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 06:27:47.689 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 5'
-2025-11-26 06:35:58.218 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-1
-2025-11-26 06:35:58.218 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-3
-2025-11-26 06:35:58.225 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 5' on thread ForkJoinPool-1-worker-3
-2025-11-26 06:35:58.225 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 2' on thread ForkJoinPool-1-worker-1
-2025-11-26 06:36:03.041 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [2]
-2025-11-26 06:36:03.087 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 06:36:05.454 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 06:36:05.454 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 2
-2025-11-26 06:36:13.844 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 06:36:13.878 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 2'
-2025-11-26 06:36:14.950 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [5]
-2025-11-26 06:36:14.952 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 06:36:17.020 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 06:36:17.021 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 5
-2025-11-26 06:36:19.177 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 06:36:19.181 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 5'
-2025-11-26 06:39:58.467 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-3
-2025-11-26 06:39:58.467 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-1
-2025-11-26 06:39:58.474 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 2' on thread ForkJoinPool-1-worker-1
-2025-11-26 06:39:58.474 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 5' on thread ForkJoinPool-1-worker-3
-2025-11-26 06:40:02.863 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [5]
-2025-11-26 06:40:02.880 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 06:40:04.723 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 06:40:04.724 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 5
-2025-11-26 06:40:07.421 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 06:40:07.435 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 5'
-2025-11-26 06:40:13.397 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [2]
-2025-11-26 06:40:13.398 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 06:40:15.197 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 06:40:15.198 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 2
-2025-11-26 06:40:17.355 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 06:40:17.363 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 2'
-2025-11-26 06:43:25.159 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-3
-2025-11-26 06:43:25.159 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-1
-2025-11-26 06:43:25.164 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 5' on thread ForkJoinPool-1-worker-3
-2025-11-26 06:43:25.164 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 2' on thread ForkJoinPool-1-worker-1
-2025-11-26 06:43:31.164 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [2]
-2025-11-26 06:43:31.164 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [5]
-2025-11-26 06:43:31.176 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 06:43:31.176 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 06:43:34.578 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 06:43:34.579 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 5
-2025-11-26 06:43:34.869 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 06:43:34.870 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 2
-2025-11-26 06:43:36.803 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 06:43:36.829 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 5'
-2025-11-26 06:43:39.723 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 06:43:39.727 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 2'
-2025-11-26 06:47:20.986 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-3
-2025-11-26 06:47:20.986 [ForkJoinPool-1-worker-2] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-2
-2025-11-26 06:47:20.991 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 5' on thread ForkJoinPool-1-worker-3
-2025-11-26 06:47:20.991 [ForkJoinPool-1-worker-2] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 2' on thread ForkJoinPool-1-worker-2
-2025-11-26 06:47:31.073 [ForkJoinPool-1-worker-2] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [2]
-2025-11-26 06:47:31.074 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [5]
-2025-11-26 06:47:31.084 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 06:47:31.084 [ForkJoinPool-1-worker-2] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 06:47:36.905 [ForkJoinPool-1-worker-2] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 06:47:36.905 [ForkJoinPool-1-worker-2] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 2
-2025-11-26 06:47:37.377 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 06:47:37.377 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 5
-2025-11-26 06:47:42.850 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 06:47:42.865 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 5'
-2025-11-26 06:47:47.588 [ForkJoinPool-1-worker-2] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 06:47:47.592 [ForkJoinPool-1-worker-2] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 2'
-2025-11-26 07:00:39.077 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-3
-2025-11-26 07:00:39.077 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-1
-2025-11-26 07:00:39.084 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 5' on thread ForkJoinPool-1-worker-3
-2025-11-26 07:00:39.084 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 2' on thread ForkJoinPool-1-worker-1
-2025-11-26 07:00:45.624 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [5]
-2025-11-26 07:00:45.638 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 07:00:49.348 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 07:00:49.350 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 5
-2025-11-26 07:00:50.067 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [2]
-2025-11-26 07:00:50.068 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 07:00:55.739 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 07:00:55.740 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 2
-2025-11-26 07:00:57.307 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 07:00:57.334 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 2'
-2025-11-26 07:01:00.006 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 07:01:00.026 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 5'
-2025-11-26 07:10:38.954 [ForkJoinPool-1-worker-2] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-2
-2025-11-26 07:10:38.963 [ForkJoinPool-1-worker-2] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 2' on thread ForkJoinPool-1-worker-2
-2025-11-26 07:10:38.954 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-3
-2025-11-26 07:10:38.964 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 5' on thread ForkJoinPool-1-worker-3
-2025-11-26 07:10:44.369 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [5]
-2025-11-26 07:10:44.388 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 07:10:47.895 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 07:10:47.896 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 5
-2025-11-26 07:10:56.851 [ForkJoinPool-1-worker-2] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [2]
-2025-11-26 07:10:56.852 [ForkJoinPool-1-worker-2] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 07:11:00.166 [ForkJoinPool-1-worker-2] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 07:11:00.235 [ForkJoinPool-1-worker-2] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 2
-2025-11-26 07:11:06.027 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 07:11:06.045 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 5'
-2025-11-26 07:11:10.011 [ForkJoinPool-1-worker-2] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 07:11:10.014 [ForkJoinPool-1-worker-2] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 2'
-2025-11-26 07:23:12.512 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-1
-2025-11-26 07:23:12.512 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-3
-2025-11-26 07:23:12.523 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 2' on thread ForkJoinPool-1-worker-1
-2025-11-26 07:23:12.523 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 5' on thread ForkJoinPool-1-worker-3
-2025-11-26 07:23:23.875 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [2]
-2025-11-26 07:23:23.882 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [5]
-2025-11-26 07:23:23.892 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 07:23:23.917 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 07:23:32.060 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 07:23:32.062 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 2
-2025-11-26 07:23:32.734 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 07:23:32.734 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 5
-2025-11-26 07:23:39.374 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 07:23:39.394 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 2'
-2025-11-26 07:23:41.316 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 07:23:41.324 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 5'
-2025-11-26 07:39:56.914 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-1
-2025-11-26 07:39:56.914 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario on thread ForkJoinPool-1-worker-3
-2025-11-26 07:39:56.981 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 2' on thread ForkJoinPool-1-worker-1
-2025-11-26 07:39:56.981 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - >> Starting scenario 'Search for text 5' on thread ForkJoinPool-1-worker-3
-2025-11-26 07:40:10.258 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [2]
-2025-11-26 07:40:10.287 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 07:40:10.400 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Executing search test on browser with text [5]
-2025-11-26 07:40:10.401 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Navigating to Bing home page
-2025-11-26 07:40:16.236 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 07:40:16.237 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 2
-2025-11-26 07:40:20.115 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Bing home page loaded successfully
-2025-11-26 07:40:20.115 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Searching for: hello automation! I'm back 5
-2025-11-26 07:40:26.510 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 07:40:26.521 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Page title after search: Search - Microsoft Bing
-2025-11-26 07:40:26.525 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 5'
-2025-11-26 07:40:26.527 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [edge] - << Closing browser for scenario 'Search for text 2'
+2025-12-01 12:30:00.029 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - Step 01: >> Starting scenario on thread ForkJoinPool-1-worker-3
+2025-12-01 12:30:00.048 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [] - Step 02: >> Starting scenario 'Search for text failed' on thread ForkJoinPool-1-worker-3
+2025-12-01 12:30:00.029 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - Step 01: >> Starting scenario on thread ForkJoinPool-1-worker-1
+2025-12-01 12:30:00.048 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [] - Step 02: >> Starting scenario 'Search for text 5' on thread ForkJoinPool-1-worker-1
+2025-12-01 12:30:00.037 [ForkJoinPool-1-worker-2] INFO  com.ui.base.DriverManager [] - Step 01: >> Starting scenario on thread ForkJoinPool-1-worker-2
+2025-12-01 12:30:00.059 [ForkJoinPool-1-worker-2] INFO  com.ui.base.DriverManager [] - Step 02: >> Starting scenario 'Search for text 2' on thread ForkJoinPool-1-worker-2
+2025-12-01 12:30:11.608 [ForkJoinPool-1-worker-2] INFO  com.ui.steps.SearchSteps [edge] - Step 03: Executing search test on browser with text [2]
+2025-12-01 12:30:11.618 [ForkJoinPool-1-worker-2] INFO  com.ui.pages.BingSearchPage [edge] - Step 04: Navigating to Bing home page
+2025-12-01 12:30:13.190 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Step 03: Ready to capture screenshot
+2025-12-01 12:30:13.190 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Step 04: Navigating to Bing home page
+2025-12-01 12:30:13.298 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Step 03: Executing search test on browser with text [5]
+2025-12-01 12:30:13.298 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Step 04: Navigating to Bing home page
+2025-12-01 12:30:19.474 [ForkJoinPool-1-worker-2] INFO  com.ui.pages.BingSearchPage [edge] - Step 05: Bing home page loaded successfully
+2025-12-01 12:30:19.480 [ForkJoinPool-1-worker-2] INFO  com.ui.pages.BingSearchPage [edge] - Step 06: Searching for: hello automation! I'm back 2
+2025-12-01 12:30:21.211 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Step 05: Bing home page loaded successfully
+2025-12-01 12:30:21.213 [ForkJoinPool-1-worker-3] INFO  com.ui.pages.BingSearchPage [edge] - Step 06: Searching for: Cheeseee
+2025-12-01 12:30:21.429 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Step 05: Bing home page loaded successfully
+2025-12-01 12:30:21.432 [ForkJoinPool-1-worker-1] INFO  com.ui.pages.BingSearchPage [edge] - Step 06: Searching for: hello automation! I'm back 5
+2025-12-01 12:30:39.496 [ForkJoinPool-1-worker-2] INFO  com.ui.steps.SearchSteps [edge] - Step 07: Page title after search: Search - Microsoft Bing
+2025-12-01 12:30:39.536 [ForkJoinPool-1-worker-2] INFO  com.ui.base.DriverManager [edge] - Step 08: << Closing browser for scenario 'Search for text 2'
+2025-12-01 12:30:41.577 [ForkJoinPool-1-worker-3] INFO  com.ui.steps.SearchSteps [edge] - Step 07: Searched for Cheeseee
+2025-12-01 12:30:41.578 [ForkJoinPool-1-worker-3] ERROR com.ui.steps.SearchSteps [edge] - Step 08: Captured screenshot for Cheeseee
+2025-12-01 12:30:43.724 [ForkJoinPool-1-worker-1] INFO  com.ui.steps.SearchSteps [edge] - Step 07: Page title after search: Search - Microsoft Bing
+2025-12-01 12:30:43.728 [ForkJoinPool-1-worker-1] INFO  com.ui.base.DriverManager [edge] - Step 08: << Closing browser for scenario 'Search for text 5'
+2025-12-01 12:30:44.486 [ForkJoinPool-1-worker-3] INFO  com.ui.base.DriverManager [edge] - Step 09: << Closing browser for scenario 'Search for text failed'
